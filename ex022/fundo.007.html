@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative; /* Todo posicionamentoserá relativo por padrão */
+            background-size: 100% 100%; /* A propriedade background-size é usada para especificar o tamanho da imagem de fundo. Ela pode ser definida usando valores de largura e altura, ou usando palavras-chave como cover ou contain. */
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url('imagens/target001.png');
+        }
+
+        #conteudo {
+            position: absolute; /* O elemento é posicionado em relação ao seu primeiro ancestral posicionado (não estático) */
+            height: 200px;
+            width: 400px;
+
+            left: 50%; /* A propriedade left especifica a distância entre o lado esquerdo do elemento e o lado esquerdo de seu elemento pai posicionado. (Só pode ser mexido se estiver em posição absoluta) */
+
+            top: 50%; /* A propriedade top especifica a distância entre o topo do elemento e o topo de seu elemento pai posicionado. (Só pode ser mexido se estiver em posição absoluta) */
+
+            transform: translate(-50%, -50%); /* A propriedade transform é usada para aplicar uma transformação 2D ou 3D a um elemento. Ela pode ser usada para mover, redimensionar, girar ou inclinar um elemento. */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
