@@ -76,22 +76,27 @@ section.normal {
 section.imagem {
     background-color: rgb(39, 32, 32);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0.514); /* sombra interna das sections de imagens */ 
+    background-attachment: fixed; /* propriedade para deixar a imagem fixa em relação ao conteudo, formando o efeito parallax*/
 }
 
 /* Espaçamento entre cada paragráfo do section*/
 section.imagem > p {
     display: inline-block; /* para adaptar o tamanho da caixa com o tamanho do conteudo */
+    text-align: 1px 1px 0px rgb(0, 0, 0); /* Sombra do texto: 1px de deslocamento 1px lateral e vertical, 0 de espalhamento*/
     padding: 5px;
     background-color: rgb(0, 0, 0, 0.253);
 }
 
 /* Configuração das Imagens do corpo do site*/
 section#img01 {
-    background-image: url('../imagens/background001.jpg') ;
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
 }
 
-section#imgo2 {
+section#img02 {
     background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 /* Configuração do Rodapé */
 footer {
