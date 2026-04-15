@@ -6,10 +6,20 @@
     padding: 0px;
 }
 
+/* Importação da fonte externa: Passion One e Sriracha*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+ :root {
+    --fonte1: Verdana, Geneva, Tahoma, Sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+ }
+
 /* Configurações do html e do body */
 html, body {
     background-color: dark;
     min-height: 100vh; /* Tamanho mínimo da altura da minha Viewport */
+    font-family: var(--fonte1);
 }
 
 /* Configurações do cabeçalho */
@@ -23,6 +33,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* Transforma as primeiras letras em Maiusculas*/
+    font-family: var(--fonte2);
+    font-size: 10vh; /* Para adaptar a fonte à 10% da viewport*/
 }
 
 /* Configuração do paragráfo do cabeçalho*/
@@ -46,6 +58,8 @@ section {
     padding-top: 10vh; /* 10% da vh será de espaçamento no topo das sections*/
     padding-bottom: 10vh; /* 10% da vh será de espaçamento no rodapé das sections*/
     line-height: 2em;
+    font-size: 4.5vh;
+    font-family: var(--fonte3);
 }
 
 /* Sections Normais*/
@@ -56,6 +70,7 @@ section.normal {
 
 /* Sections de Imagem*/
 section.imagem {
+    display: inline-block; /* para adaptar o tamanho da caixa com o tamanho do conteudo */
     background-color: gray;
     color: white;
 }
