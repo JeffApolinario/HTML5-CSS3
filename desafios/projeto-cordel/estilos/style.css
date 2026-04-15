@@ -1,32 +1,36 @@
 @charset "UTF-8";
 
+/* Configurações gerais */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+/* Configurações do html e do body */
 html, body {
     background-color: dark;
     min-height: 100vh; /* Tamanho mínimo da altura da minha Viewport */
 }
 
+/* Configurações do cabeçalho */
 header {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-
-
+/* Configurações do título do cabeçalho*/
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* Transforma as primeiras letras em Maiusculas*/
 }
 
+/* Configuração do paragráfo do cabeçalho*/
 header > p {
     padding-bottom: 50px;
 }
 
+/* Configuração do cursor do mouse sob o cabeçalho e rodapé */
 header a, footer a {
     color: white;
     text-decoration: none;
@@ -43,11 +47,14 @@ section {
     padding-bottom: 10vh; /* 10% da vh será de espaçamento no rodapé das sections*/
     line-height: 2em;
 }
+
+/* Sections Normais*/
 section.normal {
     background-color: white;
     color: black;
 }
 
+/* Sections de Imagem*/
 section.imagem {
     background-color: gray;
     color: white;
@@ -58,7 +65,7 @@ section.imagem > p {
     width: black;
 }
 
-
+/* Configuração do Rodapé */
 footer {
     background-color: black;
     color: white;
