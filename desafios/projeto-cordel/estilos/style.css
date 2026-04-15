@@ -58,10 +58,14 @@ section {
     padding-top: 10vh; /* 10% da vh será de espaçamento no topo das sections*/
     padding-bottom: 10vh; /* 10% da vh será de espaçamento no rodapé das sections*/
     line-height: 2em;
-    font-size: 4.5vh;
+    padding-left: 30px;
+    font-size: 3.5vh;
     font-family: var(--fonte3);
 }
 
+section > p {
+    padding-bottom: 2em;
+}
 /* Sections Normais*/
 section.normal {
     background-color: white;
@@ -70,16 +74,25 @@ section.normal {
 
 /* Sections de Imagem*/
 section.imagem {
-    display: inline-block; /* para adaptar o tamanho da caixa com o tamanho do conteudo */
-    background-color: gray;
+    background-color: rgb(39, 32, 32);
     color: white;
 }
 
+/* Espaçamento entre cada paragráfo do section*/
 section.imagem > p {
-    background-color: black;
-    width: black;
+    display: inline-block; /* para adaptar o tamanho da caixa com o tamanho do conteudo */
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.253);
 }
 
+/* Configuração das Imagens do corpo do site*/
+section#img01 {
+    background-image: url('../imagens/background001.jpg') ;
+}
+
+section#imgo2 {
+    background-image: url('../imagens/background002.jpg');
+}
 /* Configuração do Rodapé */
 footer {
     background-color: black;
