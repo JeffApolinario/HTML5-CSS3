@@ -20,10 +20,17 @@
             table {
                 width: 500px;
                 border-collapse: collapse;
+                position: relative; 
             }
 
-             tr:nth-child(even) {
+            tbody > tr:nth-child(even) {
                 background-color: #f2f2f2;
+            }
+
+            thead > tr > th {
+                position: sticky; /* Torna o cabeçalho fixo */
+                top: 0; /* Fixa o cabeçalho no topo da tabela */
+                background-color: gray;
             }
 
             td, th {
@@ -31,18 +38,13 @@
                 padding: 10px;
             }
 
-            thead {
+            thead, tfoot {
                 background-color: gray;
                 color: white;
             }
 
             td.num {
                 text-align: right;
-            }
-
-            tfoot {
-                background-color: gray;
-                color: white;
             }
         </style>
 </head>
@@ -206,7 +208,7 @@
         </tfoot>
 
         <h1>testeteste
-            
+
         </h1>
     </table>
 </body>
