@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+
+        <p>
+            <label for="id-estado">Estado</label>
+            <select name="estados" id="id-estado">
+
+                <option value="" selected> ---- Escolha ----</option> <!-- O "selected" define a opção definida por padrão-->
+                <optgroup label="Região Sudeste"> <!--"optgroup" Cria um grupo de seleção -->
+                    <option value="SP" >São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="id-prof">Profissão: </label>
+            <input type="text" name="prof" id="id-prof" list="listprofi"> <!--o atribuido "list" é utilizado para fazer uma conexão com a lista de profissões que foi criada mencionanda o id utilizado pela mesma-->
+
+            <datalist id="listprofi"> <!--Crio uma lista com profissões-->
+                <option value="ADM">Administrador(a)</option>
+                <option value="CONT">Contador(a)</option>
+                <option value="DEV">Desenvolvedor(a)</option>
+                <option value="PROF">Professor(a)</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10" ></textarea> <!--Campo para descrição. O Cols define quanta colunas, enquanto o rows define quantas linhas. Assim como o elemento de envio de arquivos(file), o ideal é utilizar o método "POST" por suportar mais de 3 mil bytes-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
