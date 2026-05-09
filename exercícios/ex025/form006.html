@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!--O controles de cores podem não ser reconhecido pelos navegaores -->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5"> <!--O controles de cores podem n]ao ser reconhecido pelos navegaores -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto: </label> <!--Sempre que utilizar o elemento de envio de arquivos/fotos, você não poderá usar o método Get, mas sim o Post, pois o mesmo aguenta arquivos de mais de 3 mil bytes-->
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
