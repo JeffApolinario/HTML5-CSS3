@@ -2,8 +2,7 @@
 
 /* Estilos para telas com orientação retrato (Modo Portrait/Vertical)*/
 
-
 body {
     background-image: url(../imagens/cev-portrait.jpg);
-    background-position: left bottom; /* Posiciona a imagem no canto inferior esquerdo da tela. */
+    background-position: left center; /* Posiciona a imagem no canto inferior esquerdo da tela. */
 }
