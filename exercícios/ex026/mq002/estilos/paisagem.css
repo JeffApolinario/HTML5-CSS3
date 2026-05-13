@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Estilos para telas com orientação paisagem (Modo Landscape/Horizontal)*/
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    
+}
