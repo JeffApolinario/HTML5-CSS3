@@ -10,11 +10,11 @@ Desktop: 992px até 1200px
 TV: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+@media print {
+
     body {
         background-image: url(../imagens/back-print.jpg); /* Desnecessário, pois não imprime*/
         font-family: 'Courier New', Courier, monospace;
-
     }
 
     main {
@@ -29,6 +29,14 @@ TV: acima de 1200px
     main::after {
         content: "Essa impressão foi feita através do site cursoemvideo.com";
         text-decoration: overline;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
     }
     img#phone {display: none;} 
     img#tablet {display: block;}
