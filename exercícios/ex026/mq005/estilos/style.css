@@ -14,14 +14,27 @@ header {
     background-color: gray;
 }
 
-h1 {
+header > h1 {
     text-align: center;
     padding: 10px;
 }
 
-menu {
-    display: block; /* Por padrão, o menu é um elemento de bloco, mas é bom garantir isso */
+#burger {
+    background-color: rgb(42, 41, 41);
+    display: block;
+    color: aliceblue;
     text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: rgb(59, 57, 57);
+}
+
+menu {
+    display: none; 
 }
 
 menu > ul{
@@ -32,6 +45,7 @@ menu > ul > li > a {
     display: block; /* Faz com que o link ocupe toda a área do item da lista */
     padding: 10px; /* Adiciona um pouco de espaço ao redor do texto */
     text-decoration: none; /* Remove o sublinhado dos links */
+    text-align: center;
     background-color: rgb(87, 87 , 87); /* Cor de fundo para os links */
     color: white; /* Cor do texto dos links */
     border-top: 2px solid gray; /* adiciona uma borda superior para separar as opções do menu */

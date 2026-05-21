@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-            <menu>   
+
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu id="menupages">   
                 <ul>
-                    <li><a href="http://">Opção 1</a></li>
-                    <li><a href="http://">Opção 2</a></li>
-                    <li><a href="http://">Opção 3</a></li>
-                    <li><a href="http://">Opção 4</a></li>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
                 </ul>
             </menu>
     </header>
@@ -36,5 +40,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente possimus officia autem quasi in. Non aperiam sint corrupti facere expedita, soluta eius dolorem deserunt delectus, modi quas cumque vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, dolorem eum at explicabo praesentium necessitatibus qui, nobis culpa alias excepturi illum, quaerat aliquid enim neque! Nesciunt debitis at neque quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium ipsa ipsam voluptatum laudantium tenetur inventore temporibus commodi odit ex! Minima debitis qui sequi placeat laborum ut error suscipit cumque?</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menupages.style.display == 'block' ) {
+                menupages.style.display = 'none'
+            } else {
+                menupages.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
