@@ -56,7 +56,7 @@ menu > ul > li > a:hover {
 }
 
 main {
-    width: 90vh; /* Define a largura do main como 90% da viewport */
+    width: 90vw; /* Define a largura do main como 90% da viewport */
     background-color: white;
     margin: auto; /* Centraliza o main horizontalmente */
     margin-top: 20px; /* Adiciona um espaço acima do main */
