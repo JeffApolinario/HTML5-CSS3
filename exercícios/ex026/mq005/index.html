@@ -7,8 +7,10 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
 </head>
-<body>
+
+<body onresize="mudouTamanho()"> <!-- Ao redimensionar uma página, será aplicado as configurações em JavaScript descritas na função "mudouTamanho"-->
     <header>
         <h1>Meu Site</h1>
 
@@ -42,6 +44,14 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menupages.style.display = 'block'
+            } else {
+                menupages.style.display = "none"
+            }
+        }
+
         function clickMenu() {
             if (menupages.style.display == 'block' ) {
                 menupages.style.display = 'none'
