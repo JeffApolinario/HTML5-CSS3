@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.cotainer {
+            background-color: lightblue;
+            display: flex; /* Torna o elemento pai (container) adaptável*/
+            flex-direction: row; /* Esquerda para a direita */
+            flex-direction: row-reverse; /* Direita para a esquerda */
+            flex-direction: column; /*De cima para baixo */
+            flex-direction: column-reverse; /* De baixo para cima  */;
+        }
+        div.item {
+            border: 1px solid black;
+            flex:auto; 
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G
+        </div>
+    </div>
+</body>
+</html>
